@@ -213,6 +213,7 @@ body {
   width: 100%;
   max-width: 1440px;
   padding-left: 60px;
+  padding-right: 60px;
   height: 71px;
   display: flex;
   justify-content: space-between;
@@ -472,7 +473,26 @@ body {
 }
 
 .features .features-title {
-  width: 100%;
+  /* width: 100%; */
+  margin: 30px auto;
+  width: 664px;
+}
+
+.features-title p {
+  position: relative;
+  z-index: 1;
+}
+
+.features-title p::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/About-font-Frame.png);
+  bottom: 0;
+  left: 23%;
+  width: 387px;
+  height: 46px;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .features__grid {
@@ -495,14 +515,12 @@ body {
   /* flex-wrap: wrap; */
   position: relative;
   justify-content: flex-end;
-
 }
 
 .feature-card .text {
   text-align: left;
   padding: 30px 25px;
   text-wrap: balance;
-
 }
 
 .feature-card:first-child {
@@ -510,10 +528,12 @@ body {
   flex-direction: row-reverse;
 }
 
-
-
 .feature-card:nth-child(4) {
   max-width: 733px;
+}
+
+.feature-card .card1 {
+  border-radius: 30px;
 }
 
 .feature-card .card2green {
@@ -534,7 +554,7 @@ body {
 
 .feature-card .card3 {
   position: absolute;
-  bottom:0 ;
+  bottom: 0;
   right: 0;
   border-radius: 30px;
 }
@@ -547,31 +567,137 @@ body {
 
 /* قسم التواصل */
 .cta {
-  background-color: #333;
-  color: #fff;
+  width: 100%;
+  background-color: var(--grayscale-06-color);
+  color: var(--grayscale-00-color);
   padding: 50px 20px;
   text-align: center;
 }
 
+.cta-container {
+  margin: 30px auto;
+  width: 95%;
+  border: var(--grayscale-04-color) solid 1px;
+  border-radius: 60px;
+  padding: 60px 0;
+}
 .cta button {
-  padding: 10px 20px;
-  background-color: #ff7f50;
+  padding: 16px 30px;
+  background-color: var(--primary-01-color);
   color: #fff;
   border: none;
   cursor: pointer;
   font-size: 1em;
+  border-radius: 16px;
+  margin-top: 30px;
 }
 
 /* قسم الوسائط الاجتماعية */
-.footer {
-  padding: 20px;
-  background-color: #1b1b1b;
-  color: #fff;
-  text-align: center;
+.social-media {
+  width: 100%;
+  background-color: var(--grayscale-06-color);
+  color: var(--grayscale-00-color);
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 60px 30px;
 }
 
-.social-media a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
+.social-media .social-text {
+  max-width: 1000px;
+  text-wrap: balance;
 }
+.social-media-icons {
+  width: 400px;
+  position: relative;
+}
+
+.social-media-icons .facebook {
+  position: absolute;
+  top: 10%;
+  left: -33%;
+}
+.social-media-icons .instagram {
+  position: absolute;
+  top: 25px;
+  left: 150px;
+}
+.social-media-icons .twitter {
+  position: absolute;
+  top: 46%;
+  left: 17px;
+}
+.social-media-icons .tiktok {
+  position: absolute;
+  top: 117px;
+  left: 265px;
+}
+
+
+/* <!-- logos --> */
+
+.footer-logos{
+  background-color: var(--grayscale-06-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+  align-items: center;
+}
+
+/* Footer */
+
+.footer {
+  padding: 40px 60px 10px;
+  background-color: var(--grayscale-01-color);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  border-bottom: var(--grayscale-02-color) solid 1px;
+  padding-bottom: 20px;
+}
+
+.footer-up .for-links a {
+  color: var(--grayscale-07-color);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-up button {
+  padding: 16px 30px;
+  background-color: var(--primary-01-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 16px;
+}
+
+.stores-app {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-down a {
+  color: var(--grayscale-07-color);
+  margin-right: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,154 @@
+/* Tablets and smaller laptops (1024px and below) */
+@media screen and (max-width: 1024px) {
+  /* Header & Navigation */
+  .navbar__menu {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding: 10px 20px;
+  }
+
+  /* Hero Section */
+  .hero .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .hero .hero-card {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* About Section */
+  .about .about-container {
+    flex-direction: column;
+  }
+
+  .about .about__features {
+    width: 100%;
+  }
+
+  /* Features Grid */
+  .features__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 547px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile devices (768px and below) */
+@media screen and (max-width: 768px) {
+  /* Typography Scaling */
+  .T1_Bold_128 {
+    font-size: 64px;
+  }
+  .T2_Bold_96 {
+    font-size: 48px;
+  }
+  .T3_Bold_64 {
+    font-size: 32px;
+  }
+
+  /* Stats Section */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  /* Social Media Section */
+  .social-media {
+    padding: 40px 20px;
+  }
+
+  .social-media-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /* Footer */
+  .footer-up {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .stores-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-down {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* Small mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  /* Further typography adjustments */
+  .T1_Bold_128 {
+    font-size: 48px;
+  }
+  .T2_Bold_96 {
+    font-size: 36px;
+  }
+
+  /* CTA buttons */
+  .navbar__logo a,
+  .hero .hero-card button,
+  .cta button {
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+  }
+
+  /* Grid spacing */
+  .grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Footer logos */
+  .footer-logos {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    justify-content: center;
+  }
+}
+
+/* Small mobile (360px and below) */
+@media screen and (max-width: 360px) {
+  .navbar__logo img {
+    height: 35px;
+  }
+
+  .navbar__logo a {
+    padding: 10px 20px;
+  }
+
+  .feature-card {
+    margin: 10px 0;
+  }
+}
