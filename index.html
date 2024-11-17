@@ -1,88 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Budss - Everyone is an Influencer</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css" />
 </head>
+
 <body>
+
   <!-- شريط التنقل -->
   <header class="navbar">
     <nav class="navbar__menu">
-        <a href="#for-business">For Business</a>
-        <a href="#for-customers">For Customers</a> 
-      </nav>
+      <div class="grid">
+
+        <a class="B1_Medium_16 active" href="#for-business">For Business</a>
+        <a class="B1_Medium_16" href="#for-customers">For Customers</a>
+      </div>
+    </nav>
     <div class="navbar__logo">
-        <img src="./images/logo.png" alt="">
-        <a href="#contact">Contact sales</a>
+
+      <img src="./images/logo.png" alt="" />
+      <a href="#contact">Contact sales</a>
     </div>
-    
+
   </header>
 
   <!-- قسم الترحيب -->
   <section class="hero">
-    <h1>Everyone is an Influencer</h1>
-    <p>Budss is payments as a service, a dedicated recognition and retention of customers to grow your business.</p>
-    <button>Contact sales</button>
+    <div class="grid">
+
+      <div class="hero-card">
+        <h1 class="T2_Bold_96">
+          Everyone <br />
+          is an Influencer
+        </h1>
+        <p class="S6_Regular_20">
+          Budss is a payments as a service and WOM engine dedicated to
+          acquisition and retention of customers to your business.
+        </p>
+        <button class="S4_SemiBold_20">Contact sales</button>
+      </div>
+      <picture style="margin-left: auto;">
+        <img src="./images/welcom-frame.png" alt="" />
+      </picture>
+    </div>
   </section>
 
   <!-- قسم التعريف بالخدمة -->
   <section class="about" id="for-business">
-    <h2>About Budss</h2>
-    <p>Payment as a service, powered seamlessly by our network of shoppers.</p>
-    <div class="about__features">
-      <div class="feature">Contactless</div>
-      <div class="feature">Increased Buying Power</div>
-      <div class="feature">Analytics & Insights</div>
-      <div class="feature">Fraud Protection</div>
+    <img class="frmae" src="./images/about-logo.png" alt="" />
+    <div class="grid">
+
+      <h2 class="T2_Bold_96">About Budss</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p class="S1_SemiBold_36">
+            Payment as a service, powered seamlessly by our network of shoppers
+          </p>
+        </div>
+        <div class="about__features">
+          <div class="features-row">
+            <div class="feature">
+              <img src="./images/about-Contactless.png" alt="" />
+              <h3 class="T4_Bold_48">Contactless</h3>
+              <p class="S3_Regular_24">
+                Budss uses near field communication (NFC) for making contactless
+                payments
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./images/about-Increased.png" alt="" />
+              <h3 class="T4_Bold_48">Increased Buying Power</h3>
+              <p class="S3_Regular_24">
+                Returning customers spend up to 3X more.
+              </p>
+            </div>
+          </div>
+          <div class="features-row">
+            <div class="feature">
+              <img src="./images/about-Analytics&Insights.png" alt="" />
+              <h3 class="T4_Bold_48">Analytics & Insights</h3>
+              <p class="S3_Regular_24">
+                Gain a holistic view into your customers’ buying behavior &
+                purchasing patterns.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./images/about-FraudProtection.png" alt="" />
+              <h3 class="T4_Bold_48">Fraud Protection</h3>
+              <p class="S3_Regular_24">
+                Budss handles all payments with a fraud prevention algorithm to
+                flag high risk purchases & a user set PIN code to keep payment
+                info secure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- How Works -->
+  <section class="how-works">
+    <div class="animation-how">
+      <div class="animation-how-card right">
+        <p class="T1_Bold_128" style="color: var(--secondary-01-color)">
+          How Budss Works
+        </p>
+        <p class="T1_Bold_128" style="
+              color: var(--grayscale-01-color);
+              text-shadow: 0px 0px 2px #949494;
+            ">
+          How Budss Works
+        </p>
+      </div>
+      <div class="animation-how-card left">
+        <p class="T1_Bold_128" style="
+              color: var(--grayscale-01-color);
+              text-shadow: 0px 0px 2px #949494;
+            ">
+          How Budss Works
+        </p>
+        <p class="T1_Bold_128" style="color: var(--primary-02-color)">
+          How Budss Works
+        </p>
+      </div>
+      <div class="animation-how-card right">
+        <p class="T1_Bold_128" style="color: var(--secondary-02-color)">
+          How Budss Works
+        </p>
+        <p class="T1_Bold_128" style="
+              color: var(--grayscale-01-color);
+              text-shadow: 0px 0px 2px #949494;
+            ">
+          How Budss Works
+        </p>
+      </div>
+    </div>
+    <picture>
+      <img src="./images/howWorks-phone.png" alt="" />
+    </picture>
   </section>
 
   <!-- قسم الإحصاءات -->
   <section class="stats">
     <div class="stat">
-      <h3>15%</h3>
-      <p>Increase in Purchase Amount</p>
+      <h3 class="T3_Bold_64">15%</h3>
+      <p class="S2_SemiBold_24">Increase <br> in Purchase Amount</p>
     </div>
     <div class="stat">
-      <h3>30%</h3>
-      <p>Growth in Annual Sales</p>
+      <h3 class="T3_Bold_64">30%</h3>
+      <p class="S2_SemiBold_24">Growth <br> in Annual Sales</p>
     </div>
     <div class="stat">
-      <h3>10%</h3>
-      <p>Growth in New Customers</p>
+      <h3 class="T3_Bold_64">10%</h3>
+      <p class="S2_SemiBold_24">Growth in New Customers</p>
     </div>
   </section>
 
-  <!-- قسم المزايا -->
+  <!-- features-->
   <section class="features">
-    <h2>Why Budss</h2>
-    <p>We Provide Advanced Payment Solutions to Grow Your Business</p>
-    <div class="features__grid">
-      <div class="feature-card">Turn your customers into loyal influencers</div>
-      <div class="feature-card">Harness the power of buying in bulk</div>
-      <div class="feature-card">Supercharge Loyalty With Instant Cash Back</div>
-      <div class="feature-card">Seasoned with AI and Gamification</div>
-    </div>
-  </section>
 
-  <!-- قسم التواصل -->
-  <section class="cta">
-    <h2>Let Your Business Grow</h2>
-    <button>Contact sales</button>
+    <div class="features-title">
+      <h2 class="T3_Bold_64">Why Budss</h2>
+      <p class="S1_SemiBold_36">We Provide Advanced Payment Solutions <br>to Grow Your Business</p>
+    </div>
+    <div class="features__grid">
+      <div class="feature-card">
+        <div class="text">
+          <h3 class="T5_SemiBold_48">
+            Turn your customers into loyal influencers
+          </h3>
+          <p class="S6_Regular_20">
+            Budss helps businesses harness the exponential power of loyal customers for acquisition and retention.
+          </p>
+        </div>
+        <img src="./images/feature-icon-trun.png" alt="" class="card1">
+      </div>
+      <div class="feature-card">
+        <div class="text">
+          <h3 class="T5_SemiBold_48">
+            Harness the power of buying in bulk
+          </h3>
+          <p class="S6_Regular_20">
+            Get at least 2X more sales with Budss Buying Groups. Your customer base will grow exponentially as your
+            customers add their friends & family to your personalized group.
+          </p>
+        </div>
+        <img src="./images/feature-icon-greenBag.png" alt="" class="card2green">
+        <img src="./images/feature-icon-orangeBag.png" alt="" class="card2orange">
+        <img src="./images/feature-icon-purpleBag.png" alt="" class="card2purple">
+      </div>
+      <div class="feature-card">
+        <div class="text">
+          <h3 class="T5_SemiBold_48">
+            Supercharge Loyalty With Instant Cash Back
+          </h3>
+          <p class="S6_Regular_20">
+            Budss allows for shoppers to earn immediate cash back at their favorite stores.
+          </p>
+        </div>
+        <img src="./images/feature-icon-supercharge.png" alt="" class="card3">
+      </div>
+      <div class="feature-card">
+        <div class="text">
+          <h3 class="T5_SemiBold_48">
+            Seasoned with AI and Gamification
+          </h3>
+          <p class="S6_Regular_20">
+            AI programming creates a personalized customer journey, offering recommendations for their next purchase and
+            optimizing rewards for after purchase.
+          </p>
+        </div>
+        <img src="./images/feature-icon-seasoned.png" alt="" class="card4">
+      </div>
+    </div>
+    </div>
+
   </section>
+  <!-- قسم التواصل -->
+  <!-- <section class="cta">
+      <h2>Let Your Business Grow</h2>
+      <button>Contact sales</button>
+    </section> -->
 
   <!-- قسم الوسائط الاجتماعية -->
-  <footer class="footer">
-    <p>Your Brand Awareness Matters</p>
-    <div class="social-media">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter</a>
-      <a href="#">TikTok</a>
-    </div>
-    <p>© 2024 Budss. All Rights Reserved.</p>
-  </footer>
+  <!-- <footer class="footer">
+      <p>Your Brand Awareness Matters</p>
+      <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">TikTok</a>
+      </div>
+      <p>© 2024 Budss. All Rights Reserved.</p>
+    </footer> -->
 </body>
+
 </html>
