@@ -9,17 +9,13 @@
   }
 
   /* Hero Section */
-  .hero .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  .hero {
+    padding: 40px 20px;
   }
 
-  .hero .hero-card {
-    width: 100%;
-    padding: 40px 20px;
-    text-align: center;
+  .hero img {
+    max-width: 450px;
+    margin-top: auto;
   }
 
   /* About Section */
@@ -29,6 +25,10 @@
 
   .about .about__features {
     width: 100%;
+  }
+
+  .about .frmae {
+    display: none;
   }
 
   /* Features Grid */
@@ -43,6 +43,51 @@
     width: 100%;
     max-width: 547px;
     margin: 0 auto;
+  }
+
+  /* social-media */
+
+  .social-media {
+    flex-wrap: wrap;
+    height: 500px;
+    justify-content: center;
+    padding: 40px 20px 100px;
+  }
+
+  .social-media-icons .facebook {
+    position: absolute;
+    top: 10%;
+    left: -33%;
+  }
+  .social-media-icons .instagram {
+    position: absolute;
+    top: 3px;
+    left: 182px;
+  }
+  .social-media-icons .twitter {
+    position: absolute;
+    top: 207%;
+    left: 17px;
+  }
+  .social-media-icons .tiktok {
+    position: absolute;
+    top: 117px;
+    left: 344px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 20px;
+
+  }
+
+  .footer-up .for-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-up .for-links a {
+    margin-bottom: 10px;
   }
 }
 
@@ -59,36 +104,83 @@
     font-size: 32px;
   }
 
+  .grid {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
   /* Stats Section */
   .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 40px 20px;
+    display: flex;
   }
 
   .stat {
     text-align: center;
   }
 
-  /* Social Media Section */
-  .social-media {
-    padding: 40px 20px;
+  /* how-works */
+  .how-works img{
+    width: 30%;
   }
+
+  /* Social Media Section */
+
 
   .social-media-icons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-items: center;
+    width: 400px;
   }
 
+  .social-media-icons .facebook {
+    position: absolute;
+    top: 10%;
+    left: -33%;
+  }
+  .social-media-icons .instagram {
+    position: absolute;
+    top: 25px;
+    left: 174px;
+  }
+  .social-media-icons .twitter {
+    position: absolute;
+    top: 89%;
+    left: 17px;
+  }
+  .social-media-icons .tiktok {
+    position: absolute;
+    top: 117px;
+    left: 308px;
+  }
+  
+
   /* Footer */
+
+  .footer-logos {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    justify-content: center;
+  }
+
+
+
   .footer-up {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     text-align: center;
+  }
+
+  .footer-up img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .footer-up button {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .stores-app {
@@ -114,6 +206,17 @@
   .T2_Bold_96 {
     font-size: 36px;
   }
+  .T5_SemiBold_48 {
+    font-size: 32px;
+  }
+
+  .T3_Bold_64 {
+    font-size: 24px;
+  }
+
+  .S1_SemiBold_36 {
+    font-size: 24px;
+  }
 
   /* CTA buttons */
   .navbar__logo a,
@@ -121,12 +224,88 @@
   .cta button {
     width: calc(100% - 40px);
     margin: 10px 20px;
+    padding: 10px;
   }
 
   /* Grid spacing */
   .grid {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0;
+  }
+
+  /* .hero */
+
+  .hero .hero-card {
+    width: 100%;
+  
+  }
+  .hero img {
+    width: 100%;
+  }
+
+  /* about  */
+  .about .about-text {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .about .about-text p {
+    
+  }
+
+  /* stats */
+
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+  }
+
+  /* feature */
+
+  .features{
+    width: 100%;
+  }
+
+  .features .features-title {
+    width: 100%;
+  }
+
+  .features-title p::before {
+    width: 237px;
+    height: 36px;
+    background-repeat: round;
+  }
+  .features__grid {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+    
+  }
+
+  .feature-card .text {
+    /* padding: 0; */
+    margin: 0;
+  }
+
+  .feature-card:first-child {
+    flex-wrap: wrap;
+  }
+
+  .feature-card:nth-child(4) {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* .social-media */
+
+  .social-media-icons {
+    width: 100%;
   }
 
   /* Footer logos */
