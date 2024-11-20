@@ -180,6 +180,7 @@
   padding: 0;
 }
 body {
+  overflow-x: hidden;
   color: #333;
 }
 
@@ -207,6 +208,10 @@ body {
   padding: 0;
   width: 100%;
   background-color: var(--grayscale-07-color);
+}
+
+.btn-phone-menu {
+  display: none;
 }
 .navbar__logo {
   margin: 0 auto;
@@ -257,7 +262,51 @@ body {
   padding-top: px;
 }
 
-/* قسم الترحيب */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 150px;
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background-color: var(--grayscale-01-color);
+}
+
+.burger-menu img{
+  width: 40px;
+  margin-left: auto;
+}
+
+.burger-menu .btn {
+  text-decoration: none;
+  color: var(--grayscale-07-color);
+  padding: 16px 30px;
+  background-color: var(--primary-01-color);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.burger-menu .links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.burger-menu .links a {
+  color: var(--grayscale-07-color);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.burger-menu.active {
+  display: flex;
+}
+
+/* hero*/
 .hero {
   /* padding-left: 50px; */
   width: 100%;
@@ -296,7 +345,7 @@ body {
   max-height: 529px;
 }
 
-/* قسم التعريف بالخدمة */
+/*about*/
 .about {
   width: 100%;
   position: relative;
@@ -440,7 +489,7 @@ body {
   }
 }
 
-/* قسم الإحصاءات */
+/* stats*/
 .stats {
   display: flex;
   justify-content: center;
@@ -460,6 +509,7 @@ body {
 
 .stat p {
   color: var(--grayscale-07-color);
+  text-wrap: balance;
 }
 
 /*features*/
@@ -511,7 +561,6 @@ body {
   color: var(--grayscale-00-color);
   margin: 10px;
   display: flex;
-  /* flex-wrap: wrap; */
   position: relative;
   justify-content: flex-end;
 }
@@ -597,7 +646,6 @@ body {
   background-color: var(--grayscale-06-color);
   color: var(--grayscale-00-color);
   display: flex;
-  /* flex-wrap: wrap; */
   padding: 60px 30px;
 }
 

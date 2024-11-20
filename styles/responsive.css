@@ -78,7 +78,6 @@
   /* Footer */
   .footer {
     padding: 40px 20px;
-
   }
 
   .footer-up .for-links {
@@ -109,8 +108,6 @@
     padding: 0;
   }
 
-
-
   /* Stats Section */
   .stats {
     display: flex;
@@ -121,12 +118,11 @@
   }
 
   /* how-works */
-  .how-works img{
+  .how-works img {
     width: 30%;
   }
 
   /* Social Media Section */
-
 
   .social-media-icons {
     width: 400px;
@@ -152,7 +148,6 @@
     top: 117px;
     left: 308px;
   }
-  
 
   /* Footer */
 
@@ -162,8 +157,6 @@
     padding: 40px 20px;
     justify-content: center;
   }
-
-
 
   .footer-up {
     display: grid;
@@ -206,17 +199,41 @@
   .T2_Bold_96 {
     font-size: 36px;
   }
-  .T5_SemiBold_48 {
-    font-size: 32px;
-  }
-
   .T3_Bold_64 {
     font-size: 24px;
   }
 
+  .T4_Bold_48 {
+    font-size: 32px;
+  }
+  .T5_SemiBold_48 {
+    font-size: 32px;
+  }
   .S1_SemiBold_36 {
     font-size: 24px;
   }
+
+  .S3_Regular_24 {
+    font-size: 16px;
+  }
+
+  /* navbar  */
+
+  .navbar__logo {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .navbar__logo a {
+    display: none;
+  }
+
+  .navbar__logo .btn-phone-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
 
   /* CTA buttons */
   .navbar__logo a,
@@ -236,34 +253,85 @@
 
   .hero .hero-card {
     width: 100%;
-  
   }
   .hero img {
     width: 100%;
   }
 
   /* about  */
+
+  .about {
+    padding: 20px;
+    overflow: hidden;
+  }
   .about .about-text {
     padding: 10px;
     width: 100%;
   }
 
   .about .about-text p {
-    
+    text-wrap: balance;
   }
 
+  .about .about-text p::before {
+    bottom: 45px;
+    left: 34%;
+    width: 242px;
+    height: 33px;
+    background-repeat: round;
+  }
+
+  .about .about-container {
+    gap: 50px;
+  }
+
+  .about .features-row {
+    gap: 50px;
+  }
+
+  /* how work  */
+  .how-works {
+    width: 100%;
+  }
+
+  .how-works .animation-how {
+    /* width: 100%; */
+    overflow: hidden;
+  }
+  .how-works img {
+    width: 47%;
+  }
   /* stats */
 
   .stats {
+    overflow: hidden;
+    width: 100%;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
 
+  .stats .stat {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+  }
+
+  .stat p {
+    text-wrap: nowrap;
+    margin: auto 0;
+    font-size: 20px;
+  }
+
+  .stat h3 {
+    font-size: 40px;
+    margin-right: 10px;
   }
 
   /* feature */
 
-  .features{
+  .features {
     width: 100%;
   }
 
@@ -283,11 +351,9 @@
 
   .feature-card {
     width: 100%;
-    
   }
 
   .feature-card .text {
-    /* padding: 0; */
     margin: 0;
   }
 
@@ -302,14 +368,45 @@
     flex-wrap: wrap;
   }
 
-  /* .social-media */
+  .feature-card:nth-child(4) .text {
+    padding-bottom: 0;
+  }
+
+  .feature-card .card1 {
+    width: 50%;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+  }
+
+  .feature-card .card4 {
+    height: 50%;
+  }
+
+  /* Social Media Section */
 
   .social-media-icons {
-    width: 100%;
+    width: 77%;
+    height: 39%;
+  }
+
+  .social-media-icons a img {
+    width: 64px;
+  }
+
+  .social-media-icons .facebook {
+    left: -11%;
+  }
+
+  .social-media-icons .twitter {
+    left: 58px;
+  }
+  .social-media-icons .tiktok {
+    left: 258px;
   }
 
   /* Footer logos */
   .footer-logos {
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
     padding: 40px 20px;
