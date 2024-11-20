@@ -21,13 +21,13 @@ const closeBanner = document.getElementById("closeBanner");
 
 // When the "Accept Cookies" button is clicked
 acceptBtn.addEventListener("click", () => {
-    alert("Cookies Accepted!");
+    console.log("Cookies Accepted!");
   cookiesBanner.style.display = "none";
 });
 
 // When the "Decline Cookies" button is clicked
 declineBtn.addEventListener("click", () => {
-  alert("Cookies Declined!");
+  console.log("Cookies Declined!");
   cookiesBanner.style.display = "none";
 
 });
