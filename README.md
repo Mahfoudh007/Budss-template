@@ -5,8 +5,6 @@
 ## Как использовать
 1. Склонируйте репозиторий:
 git clone https://github.com/your-username/your-repo-name.git
-
-نسخ الكو
 2. Откройте файл `index.html` в браузере для просмотра проекта.
 
 
@@ -17,5 +15,4 @@ This project is a responsive form built using HTML, CSS, and JavaScript.
 ## How to Use
 1. Clone the repository:
 git clone https://github.com/your-username/your-repo-name.git
-نسخ الكود
 2. Open the `index.html` file in your browser to view the project.
