@@ -16,11 +16,10 @@
 
 <body>
 
-  <!-- شريط التنقل -->
+  <!-- Navbar -->
   <header class="navbar">
     <nav class="navbar__menu">
       <div class="grid">
-
         <a class="B1_Medium_16 active" href="#for-business">For Business</a>
         <a class="B1_Medium_16" href="#for-customers">For Customers</a>
       </div>
@@ -28,12 +27,12 @@
     <div class="navbar__logo">
 
       <img src="./images/logo.png" alt="" />
-      <a href="#contact">Contact sales</a>
+      <a  onclick="openModal()" href="#contact">Contact sales</a>
       <img src="./images/phone-menu.png" class="btn-phone-menu" id="burgerOpen" alt="">
     </div>
     <div id="burgerMenu" class="burger-menu">
       <img id="burgerClose" src="./images/close-icon.png" alt="">
-      <a class="btn" href="#contact">Contact sales</a>
+      <a onclick="openModal()" class="btn" href="#contact">Contact sales</a>
       <div class="links">
         <a class="S5_Medium_20" href="#">For Business</a>
         <a class="S5_Medium_20" href="#">For Customers</a>
@@ -45,7 +44,7 @@
 
   </header>
 
-  <!-- قسم الترحيب -->
+  <!-- Hero -->
   <section class="hero">
     <div class="grid">
 
@@ -58,7 +57,7 @@
           Budss is a payments as a service and WOM engine dedicated to
           acquisition and retention of customers to your business.
         </p>
-        <button class="S4_SemiBold_20">Contact sales</button>
+        <button onclick="openModal()" class="S4_SemiBold_20">Contact sales</button>
       </div>
       <picture style="margin-left: auto;">
         <img src="./images/welcom-frame.png" alt="" />
@@ -66,7 +65,7 @@
     </div>
   </section>
 
-  <!-- قسم التعريف بالخدمة -->
+  <!-- about-->
   <section class="about" id="for-business">
     <img class="frmae" src="./images/about-logo.png" alt="" />
     <div class="grid">
@@ -162,7 +161,7 @@
     </picture>
   </section>
 
-  <!-- قسم الإحصاءات -->
+  <!-- stats -->
   <section class="stats">
     <div class="stat">
       <h3 class="T3_Bold_64">15%</h3>
@@ -238,17 +237,17 @@
     </div>
 
   </section>
-  <!-- قسم التواصل -->
+  <!-- cta -->
   <section class="cta">
 
     <div class="cta-container">
       <h2 class="T3_Bold_64">Let Your Business Grow</h2>
-      <button class="S4_SemiBold_20">Contact sales</button>
+      <button onclick="openModal()" class="S4_SemiBold_20">Contact sales</button>
     </div>
 
   </section>
 
-  <!-- قسم الوسائط الاجتماعية -->
+  <!--social media-->
 
   <section class="social-media">
     <div class="social-text">
@@ -286,7 +285,7 @@
         <a class="S5_Medium_20" href="#">For Business</a>
         <a class="S5_Medium_20" href="#">For Customers</a>
       </div>
-      <button class="S4_SemiBold_20">Contact sales</button>
+      <button onclick="openModal()" class="S4_SemiBold_20">Contact sales</button>
       <div class="stores-app">
         <a href="#"><img src="./images/appStore.png" alt=""></a>
         <a href="#"><img src="./images/googlePlay.png" alt=""></a>
@@ -312,6 +311,57 @@
         <button class="decline" id="declineCookies">Decline</button>
       </div>
       <img id="closeBanner" class="close-btn" src="./images/icon-button-white-close.png" alt="">
+    </div>
+
+    <!-- popup Form -->
+
+    <div id="popupForm" class="modal">
+      <div id="contactForm" class="modal-content">
+        <img src="./images/icon-button-white-close.png" class="close-btn" id="closeModal">
+        <form class="form">
+          <label class="B3_Medium_14" for="name">Name <span>*</span></label>
+          <input type="text" id="name" placeholder="Enter name" >
+          <span id="nameError" class="error">This field is required.</span>
+  
+          <label class="B3_Medium_14" for="email">Email <span>*</span></label>
+          <input type="email" id="email" placeholder="Enter email" >
+          <span id="emailError" class="error">This field is required.</span>
+  
+          <label class="B3_Medium_14" for="phone">Phone number <span>*</span></label>
+          <div class="phone-input">
+            <img id="countryFlag" class="flag-icon" src="./images/flags/us.png" alt="Flag">
+            <input type="tel" id="phoneNumber" placeholder="+1 900 000 00 00" >
+          </div>
+          <span id="phoneError" class="error">This field is required.</span>
+  
+          <label class="B3_Medium_14" for="company">Company</label>
+          <input type="text" id="company" placeholder="Enter company">
+  
+          <label class="B3_Medium_14" for="website">Website/Store URL</label>
+          <input type="url" id="website" placeholder="Enter Website/Store URL">
+  
+          <p id="requiredText" class="required-text">Please fill in all required fields</p>
+          <p  class="terms B6_Light_14_Underline">
+            By submitting this form you are agreeing to Budss’s 
+            <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+          </p>
+          <button type="submit" class="submit-btn S4_SemiBold_20">Contact sales</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- popup success -->
+
+    <div id="popupSuccess" class="popup-success">
+      <div class="popup-content">
+        <img onclick="closeSuccess()" class="close-success-btn" src="./images/icon-button-white-close.png" alt="">
+        <img class="success-img" src="./images/success-img.png" alt="">
+        <h2 class="S1_SemiBold_36">Thank you!</h2>
+        <p class="S3_Regular_24">
+          Thank you, we have received your application and will contact you soon!
+        </p>
+        <button onclick="closeSuccess()" class="S4_SemiBold_20">Super!</button>
+      </div>
     </div>
 
 

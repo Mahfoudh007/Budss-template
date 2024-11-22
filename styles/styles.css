@@ -613,7 +613,7 @@ body {
   height: 301px;
 }
 
-/* قسم التواصل */
+/* cta */
 .cta {
   width: 100%;
   background-color: var(--grayscale-06-color);
@@ -640,7 +640,7 @@ body {
   margin-top: 30px;
 }
 
-/* قسم الوسائط الاجتماعية */
+/* social-media */
 .social-media {
   width: 100%;
   background-color: var(--grayscale-06-color);
